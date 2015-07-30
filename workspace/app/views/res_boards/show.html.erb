@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @res_board.title %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @res_board.address %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @res_board.phoneNumber %>
+</p>
+
+<div class='image'>
+  <%= image_tag(@res_board.picture) %> <!--그림 표기-->
+</div>
+
+
+<%= link_to 'Edit', edit_res_board_path(@res_board) %> |
+<%= link_to 'Back', res_boards_path %>
