@@ -69,6 +69,6 @@ class ResBoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def res_board_params
-      params.require(:res_board).permit(:title, :address, :phoneNumber, :picture, :picture_cache, :contents)
+      params.require(:res_board).permit(:title, :address, :phoneNumber,:picture, :picture_cache, :contents)
     end
 end

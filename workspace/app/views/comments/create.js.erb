@@ -1,0 +1,6 @@
+<% if @comment.errors.size == 0 %>
+  $('<%=j render @comment %>').appendTo($("#comments_list_<%=@res_board.id %>")).hide().fadeIn('fast');
+  $("#comments_form_<%=@res_board.id %> form")[0].reset();
+<% else %>
+  alert("Please submit after commenting...");
+<% end %>

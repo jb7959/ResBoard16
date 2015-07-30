@@ -26,6 +26,10 @@ class PictureUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
+  
+  def base_store_dir
+    "documents/#{model.file_name[0, 2]}"
+  end
  
    process :resize_to_fit => [200, 200]
   

@@ -1,0 +1,11 @@
+<% comment = @res_board.comments.new %>
+<div id="comments_form_<%=@res_board.id%>">
+<%= simple_form_for([@res_board, comment], remote: true ) do | f | %>
+  <div class='form-inputs'>
+    <%= f.input :body, label: false, placeholder: 'Add a comment.',  input_html: { rows: 5 } %>
+  </div>
+  <div class='form-actions'>
+    <%= f.button :submit %>
+  </div>
+<% end %>
+</div>

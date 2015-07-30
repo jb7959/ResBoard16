@@ -19,6 +19,7 @@
   <%= image_tag(@res_board.picture) %> <!--그림 표기-->
 </div>
 
+<%= render "comments/comments" %>
 
-<%= link_to 'Edit', edit_res_board_path(@res_board) %> |
-<%= link_to 'Back', res_boards_path %>
+<%#= link_to 'Edit', edit_res_board_path(@res_board) %> 
+<%#= link_to 'Back', res_boards_path %>

@@ -1,0 +1,9 @@
+<ul id="comments_list_<%=@res_board.id%>">
+<% if @res_board.comments.size > 0 %>
+  <%= render @res_board.comments %>
+<% else %>
+  <li>
+    No comments
+  </li>
+<% end %>
+</ul>
